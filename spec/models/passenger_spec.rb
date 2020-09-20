@@ -5,7 +5,6 @@ describe Passenger do
 
   it 'has many taxis through rides' do
     taxi = Taxi.create
-
     passenger.taxis << taxi
     passenger.save
 
@@ -14,7 +13,6 @@ describe Passenger do
 
   it 'has many rides' do
     ride = Ride.create
-
     passenger.rides << ride
     passenger.save
 
